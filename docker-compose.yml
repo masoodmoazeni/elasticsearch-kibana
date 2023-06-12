@@ -1,0 +1,32 @@
+version: "3.7"
+services:
+  elasticsearch:
+    image: elasticsearch:7.8.1
+    container_name: elasticsearch
+    environment:
+    - node.name=es01
+    - cluster.name=es-docker-cluster
+    - cluster.initial_master_nodes=es01
+    - bootstrap.memory_lock=true
+    - http.cors.enabled=true
+    - http.cors.allow-origin=*
+    - "ES_JAVA_OPTS=-Xms3g -Xmx3g"
+    ulimits:
+      memlock:
+        soft: -1
+        hard: -1
+      nofile:
+        soft: 98304
+        hard: 98304
+    volumes:
+      - ./els:/usr/share/elasticsearch/data
+    ports:
+    - 9200:9200
+  kibana:
+    init: true
+    image: kibana:7.8.1
+    container_name: kibana
+    ports:
+    - 5601:5601
+    volumes:
+      - ./kibana.yml:/usr/share/kibana/config/kibana.yml
