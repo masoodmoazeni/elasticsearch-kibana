@@ -3,6 +3,7 @@ services:
   elasticsearch:
     image: elasticsearch:7.8.1
     container_name: elasticsearch
+    restart: unless-stopped
     environment:
     - node.name=es01
     - cluster.name=es-docker-cluster
@@ -25,6 +26,7 @@ services:
   kibana:
     init: true
     image: kibana:7.8.1
+    restart: unless-stopped
     container_name: kibana
     ports:
     - 5601:5601
