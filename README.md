@@ -16,3 +16,9 @@ https://askubuntu.com/questions/919054/how-do-i-run-a-single-command-at-startup-
 PUT /elastic_visiton_product
 
 GET elastic_visiton_product/_doc/10970
+
+
+command curl for create index
+```
+curl -X PUT "url:9200/elastic_visiton_product
+```
