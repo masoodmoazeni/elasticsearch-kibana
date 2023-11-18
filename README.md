@@ -20,5 +20,5 @@ GET elastic_visiton_product/_doc/10970
 
 command curl for create index
 ```
-curl -X PUT "url:9200/elastic_visiton_product
+curl -X PUT "url:9200/elastic_visiton_product"
 ```
