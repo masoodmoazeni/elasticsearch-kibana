@@ -36,7 +36,7 @@ GET elastic_visiton_product/_doc/_search
 ```
 DELETE elastic_visiton_advertise
 ```
-for search in elastic
+for best search in elastic
 ```
 https://stackoverflow.com/questions/31176000/like-search-in-elasticsearch
 ```
