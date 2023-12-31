@@ -47,4 +47,6 @@ https://www.elastic.co/guide/en/elasticsearch/client/php-api/current/updating_do
 
 ```
 https://depot.dev/blog/docker-clear-cache
+
+https://tech.forums.softwareag.com/t/how-to-clear-docker-cache/283214
 ```
