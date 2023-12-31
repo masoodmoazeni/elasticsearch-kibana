@@ -41,7 +41,10 @@ for best search in elastic
 https://stackoverflow.com/questions/31176000/like-search-in-elasticsearch
 ```
 
-
 ```
 https://www.elastic.co/guide/en/elasticsearch/client/php-api/current/updating_documents.html
+```
+
+```
+https://depot.dev/blog/docker-clear-cache
 ```
