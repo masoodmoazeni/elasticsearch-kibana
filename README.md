@@ -50,3 +50,7 @@ https://depot.dev/blog/docker-clear-cache
 
 https://tech.forums.softwareag.com/t/how-to-clear-docker-cache/283214
 ```
+
+```
+https://stackoverflow.com/questions/50609417/elasticsearch-error-cluster-block-exception-forbidden-12-index-read-only-all
+```
