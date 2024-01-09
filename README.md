@@ -54,3 +54,37 @@ https://tech.forums.softwareag.com/t/how-to-clear-docker-cache/283214
 ```
 https://stackoverflow.com/questions/50609417/elasticsearch-error-cluster-block-exception-forbidden-12-index-read-only-all
 ```
+
+```
+
+PUT _cluster/settings
+{
+  "transient": {
+    "cluster.routing.allocation.disk.watermark.low": "100gb",
+    "cluster.routing.allocation.disk.watermark.high": "50gb",
+    "cluster.routing.allocation.disk.watermark.flood_stage": "20gb",
+    "cluster.info.update.interval": "1m"
+  }
+}
+GET /_cat/nodes?v&h=id,diskTotal,diskUsed,diskAvail,diskUsedPercent
+POST /elastic_visiton_advertise,elastic_visiton_product/_cache/clear
+POST /_cache/clear
+
+PUT _settings
+    {
+    "index": {
+    "blocks": {
+    "read_only_allow_delete": "false"
+    }
+    }
+    }
+
+PUT .kibana/_settings
+{
+"index": {
+"blocks": {
+"read_only_allow_delete": "false"
+}
+}
+}
+```
