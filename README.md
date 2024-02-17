@@ -88,3 +88,7 @@ PUT .kibana/_settings
 }
 }
 ```
+
+```
+docker system prune --all --volumes --force
+```
