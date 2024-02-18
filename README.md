@@ -43,6 +43,7 @@ https://stackoverflow.com/questions/31176000/like-search-in-elasticsearch
 
 ```
 https://www.elastic.co/guide/en/elasticsearch/client/php-api/current/updating_documents.html
+https://discuss.elastic.co/t/blocked-by-too-many-requests-12-disk-usage-exceeded-flood-stage-watermark-index-has-read-only-allow-delete-block/324725
 ```
 
 ```
